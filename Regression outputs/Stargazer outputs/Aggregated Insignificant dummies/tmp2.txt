@@ -1,0 +1,178 @@
+Call:
+lm(formula = lninc ~ postsecondary + seniorsecondary + juniorsecondary +
+    primary + gender + urban + y10 + y12 + y14, data = lnincReg)
+
+Residuals:
+     Min       1Q   Median       3Q      Max
+-10.5493  -0.5264   0.2281   0.8410   5.3336
+
+Coefficients:
+                 Estimate Std. Error t value Pr(>|t|)
+(Intercept)      8.797265   0.024534 358.578  < 2e-16 ***
+postsecondary    1.732932   0.024212  71.574  < 2e-16 ***
+seniorsecondary  1.265809   0.021949  57.670  < 2e-16 ***
+juniorsecondary  1.050874   0.018734  56.093  < 2e-16 ***
+primary          0.618875   0.020639  29.985  < 2e-16 ***
+gender           0.283885   0.009443  30.064  < 2e-16 ***
+urban            0.019081   0.005930   3.217  0.00129 **
+y10             -1.089056   0.021248 -51.255  < 2e-16 ***
+y12             -0.446978   0.022283 -20.059  < 2e-16 ***
+y14             -1.361638   0.054684 -24.900  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.383 on 46144 degrees of freedom
+Multiple R-squared:  0.2391,	Adjusted R-squared:  0.239
+F-statistic:  1611 on 9 and 46144 DF,  p-value: < 2.2e-16
+
+Call:
+lm(formula = lninc ~ postsecondary + seniorsecondary + juniorsecondary +
+    primary + gender + y10 + y12 + y14, data = urban_reg)
+
+Residuals:
+     Min       1Q   Median       3Q      Max
+-10.4944  -0.3971   0.1990   0.6733   4.4564
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)
+(Intercept)      8.99563    0.03223  279.08   <2e-16 ***
+postsecondary    1.49882    0.02997   50.02   <2e-16 ***
+seniorsecondary  1.05557    0.02905   36.33   <2e-16 ***
+juniorsecondary  0.88624    0.02711   32.70   <2e-16 ***
+primary          0.55341    0.03122   17.73   <2e-16 ***
+gender           0.24503    0.01227   19.96   <2e-16 ***
+y10             -0.80633    0.02533  -31.84   <2e-16 ***
+y12             -0.26977    0.02643  -10.21   <2e-16 ***
+y14             -1.71081    0.07923  -21.59   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.242 on 23150 degrees of freedom
+Multiple R-squared:  0.1986,	Adjusted R-squared:  0.1983
+F-statistic: 717.1 on 8 and 23150 DF,  p-value: < 2.2e-16
+
+Call:
+lm(formula = lninc ~ postsecondary + seniorsecondary + juniorsecondary +
+    primary + gender + y10 + y12 + y14, data = rural_reg)
+
+Residuals:
+    Min      1Q  Median      3Q     Max
+-9.8980 -0.6364  0.2286  0.8992  5.5796
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)
+(Intercept)      8.85449    0.03690  239.93   <2e-16 ***
+postsecondary    1.33277    0.05009   26.61   <2e-16 ***
+seniorsecondary  1.04356    0.03552   29.38   <2e-16 ***
+juniorsecondary  0.94789    0.02609   36.33   <2e-16 ***
+primary          0.56980    0.02716   20.98   <2e-16 ***
+gender           0.38078    0.01434   26.55   <2e-16 ***
+y10             -1.40198    0.03401  -41.23   <2e-16 ***
+y12             -0.66265    0.03585  -18.48   <2e-16 ***
+y14             -2.65111    0.09400  -28.20   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.448 on 22284 degrees of freedom
+Multiple R-squared:  0.2376,	Adjusted R-squared:  0.2373
+F-statistic: 867.9 on 8 and 22284 DF,  p-value: < 2.2e-16
+
+Call:
+lm(formula = lninc ~ postsecondary + seniorsecondary + juniorsecondary +
+    primary + y10 + y12 + y14, data = female_urban_reg)
+
+Residuals:
+     Min       1Q   Median       3Q      Max
+-10.4420  -0.3562   0.1734   0.6363   4.4840
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)
+(Intercept)      9.48845    0.04226 224.499   <2e-16 ***
+postsecondary    1.25608    0.04057  30.958   <2e-16 ***
+seniorsecondary  0.81127    0.03938  20.601   <2e-16 ***
+juniorsecondary  0.72650    0.03710  19.580   <2e-16 ***
+primary          0.35789    0.04175   8.572   <2e-16 ***
+y10             -0.73316    0.03114 -23.543   <2e-16 ***
+y12             -0.30250    0.03248  -9.314   <2e-16 ***
+y14             -1.33373    0.09561 -13.950   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.132 on 12387 degrees of freedom
+Multiple R-squared:  0.1498,	Adjusted R-squared:  0.1493
+F-statistic: 311.8 on 7 and 12387 DF,  p-value: < 2.2e-16
+
+Call:
+lm(formula = lninc ~ postsecondary + seniorsecondary + juniorsecondary +
+    primary + y10 + y12 + y14, data = female_rural_reg)
+
+Residuals:
+    Min      1Q  Median      3Q     Max
+-9.5980 -0.5356  0.2405  0.8424  5.6423
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)
+(Intercept)      9.36113    0.04409  212.31   <2e-16 ***
+postsecondary    1.14427    0.06011   19.04   <2e-16 ***
+seniorsecondary  0.94628    0.04176   22.66   <2e-16 ***
+juniorsecondary  0.85130    0.03236   26.30   <2e-16 ***
+primary          0.48013    0.03405   14.10   <2e-16 ***
+y10             -1.31387    0.03962  -33.16   <2e-16 ***
+y12             -0.61447    0.04153  -14.80   <2e-16 ***
+y14             -2.29392    0.11752  -19.52   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.303 on 12909 degrees of freedom
+Multiple R-squared:  0.1981,	Adjusted R-squared:  0.1977
+F-statistic: 455.6 on 7 and 12909 DF,  p-value: < 2.2e-16
+
+Call:
+lm(formula = lninc ~ postsecondary + seniorsecondary + juniorsecondary +
+    primary + y10 + y12 + y14, data = male_urban_reg)
+
+Residuals:
+     Min       1Q   Median       3Q      Max
+-10.4816  -0.3791   0.2467   0.7425   4.3309
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)
+(Intercept)      8.84775    0.04812 183.863  < 2e-16 ***
+postsecondary    1.63390    0.04424  36.936  < 2e-16 ***
+seniorsecondary  1.18685    0.04296  27.625  < 2e-16 ***
+juniorsecondary  0.89749    0.03975  22.577  < 2e-16 ***
+primary          0.62488    0.04677  13.361  < 2e-16 ***
+y10             -0.87725    0.04052 -21.649  < 2e-16 ***
+y12             -0.26280    0.04234  -6.207 5.61e-10 ***
+y14             -2.19469    0.12995 -16.888  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.332 on 10693 degrees of freedom
+Multiple R-squared:  0.2153,	Adjusted R-squared:  0.2148
+F-statistic: 419.1 on 7 and 10693 DF,  p-value: < 2.2e-16
+
+Call:
+lm(formula = lninc ~ postsecondary + seniorsecondary + juniorsecondary +
+    primary + y10 + y12 + y14, data = male_rural_reg)
+
+Residuals:
+    Min      1Q  Median      3Q     Max
+-9.8023 -0.7819  0.3052  1.0189  5.3141
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)
+(Intercept)      8.81971    0.06140  143.65   <2e-16 ***
+postsecondary    1.48068    0.08454   17.52   <2e-16 ***
+seniorsecondary  0.98258    0.06398   15.36   <2e-16 ***
+juniorsecondary  0.89573    0.04347   20.60   <2e-16 ***
+primary          0.53316    0.04422   12.06   <2e-16 ***
+y10             -1.52397    0.05906  -25.80   <2e-16 ***
+y12             -0.83170    0.06301  -13.20   <2e-16 ***
+y14             -3.00963    0.14965  -20.11   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.593 on 9300 degrees of freedom
+Multiple R-squared:  0.1971,	Adjusted R-squared:  0.1965
+F-statistic: 326.2 on 7 and 9300 DF,  p-value: < 2.2e-16
